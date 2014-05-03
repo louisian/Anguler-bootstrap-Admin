@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scotchApp">
+<head>
+<meta charset="utf-8">
+<title>Admin with anguler and bootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Admin with anguler and bootstrap">
+<meta name="author" content="Sithila Sandaruwan">
+
+<!-- styles -->
+
+<link type="text/css" href="css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="css/font-awesome.min.css" rel="stylesheet" />
+
+<!--[if IE 7]>
+            <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+            <![endif]-->
+<!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery.ui.1.10.0.ie.css"/>
+            <![endif]-->
+<link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="images/ico/favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" ng-controller="mainController">
+<div class="container main-container">
+  <header>
+    <div class="row header-section">
+      <div class="col-xs-12 col-md-4">
+        <h1>
+          <bdi class="logo-icon"><i class="fa fa-lightbulb-o fa-2x"></i></bdi>
+          Company
+          <bdi class="bold-caps">Name</bdi>
+        </h1>
+        <!--   <p class="lead">A Bootstrap-themed kickstart for jQuery UI widgets (v0.5).</p>--> 
+      </div>
+      <div class="col-xs-12 col-md-4 center-align">
+        <h1>Topics</h1>
+      </div>
+      <div class="col-xs-12 col-md-4 right-align">
+     
+     
+     
+     
+     
+     
+     
+      <span><a href="#" class="login-home" id="elem" href="#"  rel="popover" data-original-title="Login Here" data-content='<form target="_blank" action="#"><input type="text" name="s"/><br><input type="text" name="s"/><button type="button" class="btn btn-primary">Primary</button></form>' data-html="true" data-placement="bottom" data-trigger="click">
+<i class="fa fa-lock"></i>
+Login
+</a></span> <span class="profile-img"> <img alt="140x140" class="img-circle" data-src="holder.js/140x140" style="width: 55px; height: 55px;" src="http://cdn.ttgtmedia.com/rms/computerweekly/photogalleries/243534/2677_20_15-neil-gaydon-chief-executive-pace.jpg"> </span> <span class="alerts"><i class="fa fa-bell-o fa-2x"></i></span> </div>
+    </div>
+  </header>
+  <main>
+    <div class="row top-area">
+      <div class="col-xs-12 col-md-2 sidebar">
+        <ul class="nav main-left-nav">
+          <li> <a href="#home">
+            <div class="sidebar-link"><i class="fa fa-sun-o"></i> Home</div>
+            </a> </li>
+          <li> <a href="#component">
+            <div class="sidebar-link"><i class="fa fa-sun-o"></i> Component</div>
+            </a> </li>
+          <li> <a href="#contact">
+            <div class="sidebar-link"><i class="fa fa-sun-o"></i> Contact</div>
+            </a> </li>
+          <li> <a href="#java-script">
+            <div class="sidebar-link"><i class="fa fa-sun-o"></i> Java Script</div>
+            </a> </li>
+             <li> <a href="#charts">
+            <div class="sidebar-link"><i class="fa fa-sun-o"></i> Chsrts</div>
+            </a> </li>
+          <li> <a href="#phones">
+            <div class="sidebar-link"><i class="fa fa-sun-o"></i> Phones</div>
+            </a> </li>
+        </ul>
+        <ul class="nav">
+          <li>
+            <p>Overall</p>
+            <div class="progress small-progress-bar ">
+              <div class="progress-bar vilot-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> 60% </div>
+            </div>
+          </li>
+          <li>
+            <p>Overall</p>
+            <div class="progress small-progress-bar">
+              <div class="progress-bar red-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> 60% </div>
+            </div>
+          </li>
+          <li>
+            <p>Overall</p>
+            <div class="progress small-progress-bar">
+              <div class="progress-bar green-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> 60% </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-7">
+        <section class="">
+          <div class="row">
+            <div class="col-md-12 content-top-btn-area">
+              <button type="button" class="btn btn-default">Default</button>
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+          </div>
+        </section>
+        <section class="">
+          
+          
+           <div id="main">
+    <!-- angular templating -->
+    <div ng-view></div>  
+  </div>
+          
+          
+          
+        </section>
+      </div>
+      <div class="col-xs-12 col-md-3 sidebar-right no-padding">
+        <section class="rightmenu-first">
+          <div class="col-md-12">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle btn-ash" data-toggle="dropdown"> Action <span class="caret"></span> </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle btn-ash" data-toggle="dropdown"> Action <span class="caret"></span> </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="rightmenu-second">
+        
+          <div class="col-md-12">
+            <button type="button" class="btn btn-primary floud-btn btn-megento" > Action </button>
+          </div>
+        </section>
+        <section class="rightmenu-three">
+        <p class="centre-title">Aditional Actions</p>
+          <ul class="nav additional-action-menu">
+            <li> <a href="#download-bootstrap">
+              <div class="sidebar-link"><i class="fa fa-sun-o fa-2 sub-title"></i><span class="menu-text">Home Abouth homesss Home Abouth homesss</span></div>
+              </a> </li>
+            <li> <a href="#download-bootstrap">
+              <div class="sidebar-link"><i class="fa fa-sun-o fa-2 sub-title"></i><span class="menu-text">Home Abouth homesss Home Abouth homesss</span></div>
+              </a> </li>
+            <li> <a href="#download-bootstrap">
+              <div class="sidebar-link"><i class="fa fa-sun-o fa-2 sub-title"></i><span class="menu-text">Home Abouth homesss Home Abouth homesss</span></div>
+              </a> </li>
+            <li> <a href="#download-bootstrap">
+              <div class="sidebar-link"><i class="fa fa-sun-o fa-2 sub-title"></i><span class="menu-text">Home Abouth homesss Home Abouth homesss</span></div>
+              </a> </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p> Admin with anguler and bootstrap &copy; Sithila Sandaruwan 2014. </p>
+      <p> Twitter Bootstrap ,anguler Js &copy; </p>
+    </div>
+  </footer>
+</div>
+
+<!-- Footer
+================================================== --> 
+
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="js/ui-bootstrap-tpls-0.1.0-SNAPSHOT.js"></script>
+ 
+<!--Anguler Js-->
+
+<script src="js/angular-1.2.16/angular.min.js"></script>
+<script src="js/angular-1.2.16/angular-route.js"></script>
+<script src="js/angular-1.2.16/angular-animate.js"></script>
+<script src="js/angular-1.2.16/angular-resource.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/services.js"></script>
+<script src="js/anguler-script.js"></script>
+<script src="js/controllers.js"></script>
+
+<script>
+
+
+$( document ).ready(function() {
+$('#elem').popover();
+});
+
+</script> 
+
+
+<!--<script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script> 
+<script src="assets/js/docs.js" type="text/javascript"></script> 
+<script src="assets/js/demo.js" type="text/javascript"></script>-->
+
+
+
+
+</body>
+</html>

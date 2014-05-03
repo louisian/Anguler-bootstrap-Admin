@@ -1,0 +1,487 @@
+/*!
+ * jQuery UI Bootstrap (0.22)
+ * http://addyosmani.github.com/jquery-ui-bootstrap
+ *
+ * Copyright 2012, Addy Osmani
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ *
+ * Portions copyright jQuery UI & Twitter Bootstrap
+ */
+h1 {
+	font-weight:normal;
+	font-family: 'Open Sans' !important;
+	font-size: 20px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+h2 small {
+    font-size: 14px;
+}
+h3,
+h4,
+h5,
+h6 {
+    line-height: 36px;
+}
+h3 {
+    font-size: 18px;
+}
+/* Override some defaults */
+html, body {
+    background-color: #eee;
+}
+body {
+    padding-top: 40px;
+	padding-bottom:40px; /* 40px to make the container go all the way to the bottom of the topbar */
+	background:#98A0A5;
+	font-family: 'Open Sans' !important;
+	font-size: 13px;
+}
+
+.bold-caps{ font-weight:bold; text-transform:uppercase;}
+.right-align{ text-align:right;}
+.left-align{ text-align:left;}
+.center-align{ text-align:center;}
+.header-section h1{ line-height:50px;}
+.header-section{ border-bottom:1px solid #D1DDE2;}
+.no-padding{ padding:0px;}
+
+.vertical-menu2  li.active{ background:#00A8FF; color:#FFF;}
+.vertical-menu2  li.active a{ color:#FFF;}
+.main-left-nav  li.active{ /*border-right:4px solid #F35F62;*/}
+.main-left-nav  li i{ padding-right:10px;}
+.main-left-nav  li.active a{ color:#F35F62;}
+.mid-content-area h1,h2,h3,h4{ color:#999; margin:0px; padding:5px 0;}
+.mid-content-area p{ color:#999; margin:0px; padding:0px 0;}
+.content-top-btn-area .btn{ padding:2px 12px; text-shadow:none;}
+.myadmin-form .btn{text-shadow:none;}
+.small-progress-bar{ height:5px;}
+.vilot-bar{ background:#AF76F0;}
+.red-bar{ background:#F35F62;}
+.green-bar{ background:#ACD940;}
+.rightmenu-first{ display:block; min-height:50px; padding:15px 0;}
+.rightmenu-second{ display:block; min-height:80px; padding:15px 0;}
+.floud-btn{ width:100%; height:50px; text-shadow:none; font-size:18px; font-weight:bold;}
+.btn-megento{ background:#A362ED; border:1px solid #9554DE;}
+.btn-ash{ background:#DBE4EB; color:#6C7A86;}
+.centre-title{ font-weight:bold; text-transform:uppercase; color:#999; text-align:center;}
+.top-area{ border-bottom:1px solid #CCC; }
+
+.additional-action-menu li a{ color:#666;}
+.additional-action-menu li a:hover{color:#00A8FF;}
+.main-left-nav li a{ padding:5px 0px 5px 0px}
+
+.green-table th{ background:#ACD940;}
+
+.login-home{ line-height:76px;}
+
+.thumbnail > img, .thumbnail a > img {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.phone-images {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.phones {
+  list-style: none;
+}
+
+.thumb {
+  float: left;
+  margin: -1em 1em 1.5em 0em;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;
+}
+
+.phones li {
+  clear: both;
+  height: 100px;
+  padding-top: 15px;
+}
+
+/** Detail View **/
+img.phone {
+  float: left;
+  margin-right: 3em;
+  margin-bottom: 2em;
+  background-color: white;
+  padding: 2em;
+  height: 400px;
+  width: 400px;
+}
+
+ul.phone-thumbs {
+  margin: 0;
+  list-style: none;
+}
+
+ul.phone-thumbs li {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+}
+
+ul.phone-thumbs img {
+  height: 100px;
+  width: 100px;
+  padding: 1em;
+}
+
+ul.phone-thumbs img:hover {
+  cursor: pointer;
+}
+
+
+ul.specs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.specs > li{
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+ul.specs > li > span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul.specs dt {
+  font-weight: bold;
+}
+
+h1 {
+ /* border-bottom: 1px solid gray;*/
+}
+
+
+
+
+.container > footer p {
+    text-align: center; /* center align it with the container */
+}
+.container {
+    /*width: 820px;*/ /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+}
+
+
+/* The white background content wrapper */
+.container > .content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+    background-color: #f5f5f5;
+    padding: 20px 20px 10px;
+    margin: -20px -20px 20px;
+}
+
+/* Styles you shouldn't keep as they are for displaying this base example only */
+.content .span10,
+.content .span4 {
+    min-height: 500px;
+}
+/* Give a quick and non-cross-browser friendly divider */
+.content .span4 {
+    margin-left: 0;
+    padding-left: 19px;
+    border-left: 1px solid #eee;
+}
+
+.topbar .btn {
+    border: 0;
+}
+.demoHeaders {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+#dialog_link,#modal_link {
+	padding: .4em 1em .4em 20px;
+	text-decoration: none;
+	position: relative;
+}
+
+#dialog_link span.ui-icon, #modal_link span.ui-icon {
+	margin: 0 5px 0 0;
+	position: absolute;
+	left: .2em;
+	top: 50%;
+	margin-top: -8px;
+}
+
+ul#icons {
+	margin: 0;
+	padding: 0;
+}
+
+ul#icons li {
+	margin: 2px;
+	position: relative;
+	padding: 4px 0;
+	cursor: pointer;
+	float: left;
+	list-style: none;
+}
+
+ul#icons span.ui-icon {
+	float: left;
+	margin: 0 4px;
+}
+
+#buttons button {
+	float: left;
+	margin-right: 4px;
+}
+
+#components {
+	margin: 2em 0 1em;
+	width: 900px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+#dialog2 label, #dialog2 input {
+	display: block;
+}
+
+#dialog2 label {
+	margin-top: 0.5em;
+}
+
+#dialog2 input, #dialog2 textarea {
+	width: 95%;
+}
+
+#tabs2 {
+	margin-top: 1em;
+}
+
+#tabs2 li .ui-icon-close {
+	float: left;
+	margin: 0.4em 0.2em 0 0;
+	cursor: pointer;
+}
+
+#add_tab {
+	cursor: pointer;
+}
+
+.span10 {
+	width: 500px;
+	margin-right: 10px;
+}
+
+.span4 {
+	width: 290px;
+}
+
+.ui-widget-overlay {
+	width: 500px;
+}
+
+.alert-message p{
+	line-height:18px;
+	margin-bottom:18px;
+}
+
+input[type="text"],
+input[type="password"],
+.ui-autocomplete-input,
+textarea,
+.uneditable-input{
+  width: 210px;
+ /* height: 18px;*/
+}
+
+#toolbar {
+	padding: 5px 0 5px 5px;
+}
+/*
+* Bug chrome with toolbar and bootstrap inheritance
+*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#toolbar input{display:block;float:left;}
+}
+
+/**
+* fix bug position button customfile
+*/
+.input-append.customfile, .input-prepend {
+    font-size: 0;
+    margin-bottom: 5px;
+    white-space: normal;
+}
+.input-append.customfile .add-on{
+	height:18px;
+	font-size:13px;
+	line-height:18px;
+}
+
+.logo-icon{ 
+color:#F90;
+/*background: -webkit-linear-gradient(#FE9501, #DC5927); 
+background: -o-linear-gradient(#FE9501, #DC5927); 
+background: -moz-linear-gradient(#FE9501, #DC5927); 
+background: linear-gradient(#FE9501, #DC5927); */
+
+ }
+.alerts{ padding:25px; height:30px; width:30px; display:block; float:right;}
+.profile-img{padding:12px 0 0px 8px;float:right;}
+.sidebar{ border-right:1px solid #D3DFE5;min-height:475px;}
+.sidebar-right{ border-left:1px solid #D3DFE5;min-height:475px;}
+.sidebar-link{ font-size: 20px; line-height: 1.5em;}
+.content-top-btn-area{ background:#F8FAFB; padding:20px 0; text-align:center; border-bottom:1px solid #D3DFE5;}
+.content-top-btn-area button{border-radius:25px;}
+.sub-title{  display:block;  float:left; padding:5px 10px 5px 0px;}
+.menu-text{ line-height:14px; font-size:12px; display:block;}
+.vertical-menu2{ border-right:1px solid #D3DFE5; min-height:400px;}
+.border-btn{ }
+.border-btn-primary{ border:1px solid #06F; color:#06F ;background:#FFF;}
+.border-btn-success{ border:1px solid #5CB85C; color:#5CB85C ;background:#FFF;}
+.border-btn-info{ border:1px solid #5BC0DE; color:#5BC0DE ;background:#FFF;}
+.border-btn-warning{ border:1px solid #F0AD4E; color:#F0AD4E ;background:#FFF;}
+.border-btn-danger{ border:1px solid #D9534F; color:#D9534F ;background:#FFF;}
+p.bg-helper-primary{ padding:10px; border:1px solid #06F; border-left:4px solid #06F; background:#FFF; color:#666; margin-bottom:5px;border-top-right-radius: 5px;border-bottom-right-radius:5px; }
+p.bg-helper-success{ padding:10px; border:1px solid #5CB85C; border-left:4px solid #5CB85C; background:#FFF; color:#5CB85C;margin-bottom:5px;border-top-right-radius: 5px;border-bottom-right-radius:5px; }
+p.bg-helper-danger{ padding:10px; border:1px solid #D9534F; border-left:4px solid #D9534F; background:#FFF; color:#D9534F;margin-bottom:5px;border-top-right-radius: 5px;border-bottom-right-radius:5px; }
+
+.ui-accordion .ui-accordion-header{ background:none; padding:5px;}
+.ui-accordion-header span{ right: 0.5em;}
+.ui-accordion .ui-accordion-header .ui-icon {left: 97%;}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 320px;	
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 320px;	
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 320px;	
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 1024px;	
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 768px;	
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 1270px;	
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 1270px;	
+	}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+.main-container{
+	background:#FFFFFF;
+	border:0px solid #848383 ;
+	border-radius:8px;
+	box-shadow: 0px 0px 10px #888888;
+	width: 1270px;	
+	}
+}

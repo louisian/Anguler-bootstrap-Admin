@@ -1,0 +1,219 @@
+<div class="row">
+            
+            <div class="col-md-12 mid-content-area">
+  
+              
+        
+              
+   <legend>Charts</legend>        
+           
+     
+
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+  <div class="demo-container">
+			<div id="placeholder" class="demo-placeholder"></div>
+        </div>
+  
+  </div>
+  <div class="col-xs-6 col-md-6">  
+  <div class="demo-container">
+			<div id="placeholder2" class="demo-placeholder"></div>
+		</div> 
+  </div>
+</div>
+
+      
+ 	<div class="row">
+  <div class="col-xs-12 col-md-6">
+  <div class="demo-container">
+			<div id="placeholder3" class="demo-placeholder"></div>
+        </div>
+  
+  </div>
+  <div class="col-xs-6 col-md-6">  
+  			<div id="placeholder4" class="demo-placeholder"></div>
+  </div>
+</div>	
+
+<div class="row">
+  <div class="col-xs-6 col-md-6">
+  <div class="demo-container">
+			<div id="placeholder6" class="demo-placeholder"></div>
+        </div>
+  
+  </div>
+  <div class="col-xs-6 col-md-6">
+  <div class="demo-container">
+			<div id="placeholder7" class="demo-placeholder"></div>
+        </div>
+  
+  </div>
+  
+</div>
+
+<div class="row">
+  
+  
+</div>
+         
+               
+              
+              
+              <p>Fusce in lacus sit amet mi volutpat lobortis ac eget dui. Etiam elementum ligula enim, nec sollicitudin mi rhoncus id. Sed tincidunt posuere augue at ullamcorper.</p>
+              <div class="media"> <a href="#" class="pull-left"> <img alt="140x140" class="img-circle" data-src="holder.js/140x140" style="width: 55px; height: 55px;" src="http://cdn.ttgtmedia.com/rms/computerweekly/photogalleries/243534/2677_20_15-neil-gaydon-chief-executive-pace.jpg"> </a>
+                <div class="media-body">
+                  <p class="media-heading">Media heading</p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus </div>
+              </div>
+              <div class="media"> <a href="#" class="pull-left"> <img alt="140x140" class="img-circle" data-src="holder.js/140x140" style="width: 55px; height: 55px;" src="http://cdn.ttgtmedia.com/rms/computerweekly/photogalleries/243534/2677_20_15-neil-gaydon-chief-executive-pace.jpg"> </a>
+                <div class="media-body">
+                  <p class="media-heading">Media heading</p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus </div>
+              </div>
+              <div class="media"> <a href="#" class="pull-left"> <img alt="140x140" class="img-circle" data-src="holder.js/140x140" style="width: 55px; height: 55px;" src="http://cdn.ttgtmedia.com/rms/computerweekly/photogalleries/243534/2677_20_15-neil-gaydon-chief-executive-pace.jpg"> </a>
+                <div class="media-body">
+                  <p class="media-heading">Media heading</p>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus </div>
+              </div>
+            </div>
+          </div>
+          
+<!--flot chart-->
+<link href="css/flot-chart/examples.css" rel="stylesheet" type="text/css">
+	<script language="javascript" type="text/javascript" src="js/flot-chart/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="js/flot-chart/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="js/flot-chart/jquery.flot.categories.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot-chart/jquery.flot.pie.js"></script>
+	<script type="text/javascript">
+
+	$(function() {
+
+		var data = [ ["January", 10], ["February", 8], ["March", 4], ["April", 13], ["May", 17], ["June", 9] ];
+		var data2 = [{ label: "Series1",  data: 10},
+		{ label: "Series2",  data: 30},
+		{ label: "Series3",  data: 90},
+		{ label: "Series4",  data: 70},
+		{ label: "Series5",  data: 80},
+		{ label: "Series6",  data: 110} ];
+		
+		var data3 = [{ label: "Series1",  data: 10},
+		{ label: "Series2",  data: 30},
+		{ label: "Series3",  data: 90},
+		{ label: "Series4",  data: 70},
+		{ label: "Series5",  data: 80},
+		{ label: "Series6",  data: 110} ];
+		
+		var data4 = [{ label: "Series1",  data: 10},
+		{ label: "Series2",  data: 30},
+		{ label: "Series3",  data: 90},
+		{ label: "Series4",  data: 70},
+		{ label: "Series5",  data: 80},
+		{ label: "Series6",  data: 110} ];
+		
+		var data6 = [{ label: "Series1",  data: 10},
+		{ label: "Series2",  data: 30},
+		{ label: "Series3",  data: 90},
+		{ label: "Series4",  data: 70},
+		{ label: "Series5",  data: 80},
+		{ label: "Series6",  data: 110} ];
+		
+		var data7 = [{ label: "Series1",  data: 10},
+		{ label: "Series2",  data: 30},
+		{ label: "Series3",  data: 90},
+		{ label: "Series4",  data: 70},
+		{ label: "Series5",  data: 80},
+		{ label: "Series6",  data: 110} ];
+		
+		
+		$.plot('#placeholder7', data7, {
+    series: {
+        pie: {
+            show: true,
+            radius: 1,
+            label: {
+                show: true,
+                radius: 2/3,
+                formatter: labelFormatter,
+                threshold: 0.1
+            }
+        }
+    },
+    legend: {
+        show: false
+    }
+});
+		
+		
+		$.plot('#placeholder6', data6, {
+    series: {
+        pie: {
+            innerRadius: 0.9,
+            show: true
+        }
+    }
+});
+
+		$.plot("#placeholder", [ data ], {
+			series: {
+				bars: {
+					show: true,
+					barWidth: 0.6,
+					align: "center"
+				}
+			},
+			xaxis: {
+				mode: "categories",
+				tickLength: 0
+			}
+		});
+		
+		$.plot('#placeholder2', data2, {
+    series: {
+        pie: {
+            show: true
+        }
+    }
+});
+
+$.plot('#placeholder3', data3, {
+				series: {
+					pie: { 
+						show: true
+					}
+				},
+				legend: {
+					show: false
+				}
+			});
+
+function labelFormatter(label, series) {
+		return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+	}
+$.plot('#placeholder4', data4, {
+				series: {
+					pie: { 
+						show: true,
+						radius: 1,
+						label: {
+							show: true,
+							radius: 1,
+							formatter: labelFormatter,
+							background: {
+								opacity: 0.8
+							}
+						}
+					}
+				},
+				legend: {
+					show: false
+				}
+			});
+
+		// Add the Flot version string to the footer
+
+		$("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
+	});
+
+	</script>          
+          
