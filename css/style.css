@@ -107,7 +107,7 @@ body {
 
 .phones li {
   clear: both;
-  height: 100px;
+  min-height: 100px;
   padding-top: 15px;
 }
 
@@ -201,6 +201,7 @@ h1 {
     padding: 20px 20px 10px;
     margin: -20px -20px 20px;
 }
+.filter-bar{ padding:10px;}
 
 /* Styles you shouldn't keep as they are for displaying this base example only */
 .content .span10,

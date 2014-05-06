@@ -1,9 +1,23 @@
+<div class="row filter-bar">
+ <div class="col-md-2">Search:</div>
+  <div class="col-md-4"> 
+    <input class="form-control" type="text" ng-model="query">
+  </div>
+  <div class="col-md-2">Sort by:</div>
+  <div class="col-md-4"> 
+    <select ng-model="orderProp" class="form-control">
+      <option value="name">Alphabetical</option>
+      <option value="age">Newest</option>
+    </select>
+  </div>
+</div>
 <ul class="phones" style="margin-left:0px; padding-left:0px;">
   <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
     <div class="row">
       <div class="col-md-2"><a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a></div>
       <div class="col-md-10"> <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
         <p>{{phone.snippet}}</p>
+        <button class="btn btn-primary" type="button" ng-click="showmodel()">Primary</button>
       </div>
     </div>
   </li>

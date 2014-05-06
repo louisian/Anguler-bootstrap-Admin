@@ -2,6 +2,10 @@ var phonecatControllers = angular.module('phonecatControllers', []);
 
 phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
   function ($scope, $http) {
+	  
+	  $scope.showmodel = function () {
+        alert('phone details');
+    }
 	 
     $http.get('phones/phones.json').success(function(data) {
       $scope.phones = data;
@@ -22,9 +26,12 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
     $scope.setImage = function(imageUrl) {
       $scope.mainImageUrl = imageUrl;
     }
+	
     $scope.updateEvent2 = function () {
         alert('delete ' + $scope.phone.imageUrl);
     }
+	
+	
 	
 	 alert('yt');
 	
