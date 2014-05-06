@@ -68,6 +68,7 @@ body {
 .btn-ash{ background:#DBE4EB; color:#6C7A86;}
 .centre-title{ font-weight:bold; text-transform:uppercase; color:#999; text-align:center;}
 .top-area{ border-bottom:1px solid #CCC; }
+footer p{ margin-top:5px; margin-bottom:5px;}
 
 .additional-action-menu li a{ color:#666;}
 .additional-action-menu li a:hover{color:#00A8FF;}
