@@ -17,8 +17,33 @@
       <div class="col-md-2"><a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a></div>
       <div class="col-md-10"> <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
         <p>{{phone.snippet}}</p>
-        <button class="btn btn-primary" type="button" ng-click="showmodel()">Primary</button>
+        <button class="btn btn-primary" type="button" ng-click="showmodel()">Buy this</button>
       </div>
     </div>
   </li>
 </ul>
+
+
+<!-- Modal -->
+<div class="modal fade" id="BuyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Model Name</h4>
+      </div>
+      <div class="modal-body">
+        <div >
+    <form>
+        <li>Number 1: <input type="text" ng-model="one"></li>  
+        <li>Number 2: <input type="text" ng-model="two"></li>
+    </form>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="confirmOrder()">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>

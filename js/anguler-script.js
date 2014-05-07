@@ -32,6 +32,11 @@
 				controller  : 'chartsController'
 			})
 			
+			.when('/html5charts', {
+				templateUrl : 'pages/HTML5charts.html',
+				controller  : 'chartsController'
+			})
+			
 			.when('/phones', {
 				templateUrl : 'pages/phone-list.html',
 				controller  : 'PhoneListCtrl'

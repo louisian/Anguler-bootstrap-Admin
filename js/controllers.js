@@ -5,6 +5,16 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
 	  
 	  $scope.showmodel = function () {
         alert('phone details');
+		$('#BuyModal').modal('show');
+
+    }
+	
+	
+	 $scope.confirmOrder = function () {
+		$scope.total=$scope.one * $scope.two;
+        alert($scope.total);
+		$('#BuyModal').modal('hide');
+
     }
 	 
     $http.get('phones/phones.json').success(function(data) {
